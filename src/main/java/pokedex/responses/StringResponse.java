@@ -1,4 +1,4 @@
-package com.example.demo.responses;
+package pokedex.responses;
 
 public class StringResponse {
 

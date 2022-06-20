@@ -1,7 +1,7 @@
-package com.example.demo.controllers;
+package pokedex.controllers;
 
-import com.example.demo.responses.StringResponse;
-import com.example.demo.responses.StringRequest;
+import pokedex.responses.StringResponse;
+import pokedex.responses.StringRequest;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 

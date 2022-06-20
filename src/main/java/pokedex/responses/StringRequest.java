@@ -1,4 +1,4 @@
-package com.example.demo.responses;
+package pokedex.responses;
 
 public class StringRequest {
     public String nombre,altura,categoria,habilidad,peso;
