@@ -1,14 +1,14 @@
 package pokedex.responses;
 
 public class StringRequest {
-    public String nombre,altura,categoria,habilidad,peso;
-    String n,e,o,s,p;
+    public String pokemon,altura,categoria,peso,kdex_id;
+    String n,e,o,p,i;
     public StringRequest() {
-        this.nombre = n;
+        this.kdex_id = i;
+        this.pokemon = n;
         this.altura = e;
-        this.categoria = o;
-        this.habilidad = s;
         this.peso = p;
+        this.categoria = o;
     }
 
 }
