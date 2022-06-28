@@ -1,7 +1,6 @@
 package pokedex;
 
 import java.sql.*;
-
 public class DbActions {
 
     static String status = "Conexion no exitosa";
@@ -9,7 +8,7 @@ public class DbActions {
     public static String carga(String q){
         Connection c;
         Statement stmt;
-        String status = "Carga Fallida";
+        String status;
         try {
             Class.forName("org.postgresql.Driver");
             c = DriverManager.getConnection(
@@ -27,7 +26,8 @@ public class DbActions {
 
         }catch (SQLException | ClassNotFoundException e) {
             e.printStackTrace();
-            status = e.getClass().getName()+": "+e.getMessage();
+            //status = e.getClass().getName()+": "+e.getMessage();
+            status = e.getMessage();
         }
         return status;
 

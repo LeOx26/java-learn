@@ -11,15 +11,15 @@ public class Controllers {
 
     @RequestMapping(value = "/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
     public String sayHello() {
-        return "Bienvenidos a la Pokedex" +
-                "\nPara cargar un pokemon ingresa a /carga e introduce los datos en el siguiente formato:\n " +
-                "\n{" +
-                "\n\"kdex_id\":\"1\"," +
-                "\n\"pokemon\":\"Balbasaur\"," +
-                "\n\"altura\":\"0,7m\"," +
-                "\n\"peso\":\"0,67kg\"," +
-                "\n\"categoria\":\"Semilla\"" +
-                "}";
+        return """
+                Bienvenidos a la Pokedex
+                Para cargar un pokemon ingresa a /carga e introduce los datos en el siguiente formato:
+                {
+                "kdex_id":"1",
+                "pokemon":"Balbasaur",
+                "altura":"0,7m",
+                "peso":"0,67kg",
+                "categoria":"Semilla"}""";
     }
 
     @PostMapping(value = "/carga", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
